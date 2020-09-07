@@ -196,8 +196,8 @@
   }
 
   .skip-link {
-    background: var(--color-black variable);
-    color: var(--color-white variable);
+    background: var(--color-black);
+    color: var(--color-white);
     left: 0;
     padding: 0.7rem;
     position: fixed;
