@@ -34,7 +34,7 @@
         function showForm() {
             let welcome = document.getElementById("welcome");
             let form = document.getElementById("form");
-            welcome.style.display = "none";
+            welcome.remove();
             form.style.display = "block";
         }
         function hideForm() {
@@ -57,7 +57,7 @@
             } else {
                 let wrapper= document.createElement('div');
                 wrapper.setAttribute("id", "welcome");
-                let html = `<h1>Welcome ${firstname.split('=')[1]}</h1><a style="font-weight: 400; font-style: italic; margin-left: 10px;" onclick="deleteCookiesAndShowForm()">(logout)</a>`;
+                let html = `<h1>Welcome ${firstname.split('=')[1]}<a style="font-weight: 400; font-style: italic; margin-left: 10px;" onclick="deleteCookiesAndShowForm()">(logout)</a></h1>`;
                 wrapper.innerHTML = html;
                 hideForm();
                 document.body.append(wrapper);
